@@ -1,6 +1,77 @@
+mixin search()
+	+b.search
+		form
+			+icon("search")
+			.input-group
+				input.form-control(type="text" placeholder="Введите страну, город, название или артикул")
+				.input-group-append
+					+e.btn.btn-light(type="submit") Найти
+
 mixin top-line()
 	// start .top-line
-	+b.top-line.block-with-lazy
-		.container
-			.row top-line
+	+b.HEADER.top-line.block-with-lazy
+		+b.search-mob.d-md-none
+			.container
+				form
+					input.form-control(type="text" placeholder="Введите страну, город, название или артикул")
+					+e.btn(type="submit")
+						+icon("search")
+		+e.body
+			.container
+				.row
+					.col.d-lg-none
+						+logo()
+					.col.text-secondary.d-none.d-lg-block Турецкая недвижимость напрямую от&nbsp;застройщиков
+					+add-user()
+
+					
+					.col-auto.d-xl-flex.align-items-center.text-right.d-none.d-md-block
+						.text-secondary.mr-xl-2 Русскоговорящий отдел продаж: 
+						+e.link(href="tel:88001234567")
+							+icon('telephone')
+							| 8 800 123 45 67
+					.col-auto.d-md-none
+						+b.toggle-menu-mobile--js
+							span
+		+e.mobile-hidden
+			.container
+				.row
+					.col-6.text-secondary.d-md-none Турецкая недвижимость напрямую от&nbsp;застройщиков
+					.col-6.d-md-none.align-items-center 
+						+e.link(href="mailto:info@a7.market")
+							+icon('email')
+							| info@a7.market
+						
+					.col-6.d-md-none.align-items-center
+						.text-secondary.mb-1 Русскоговорящий отдел продаж: 
+						+e.link(href="tel:88001234567")
+							+icon('telephone')
+							| 8 800 123 45 67
+
+					.col-auto.d-none.d-lg-block
+						+logo()
+					.col-auto.order-md-0.order-last
+						+video-btn()
+					.col-md.order-md-0.order-first
+						+search()
+						
+						
+					.col-auto
+						+e.btn.btn-outline-primary.link-modal(href="#modal-call") Заказать звонок
+					.col-7.d-md-none
+						ul
+							li
+								a(href="#") О компании
+						
+							li
+								a(href="#") Вид на жительство в Турции
+						
+							li
+								a(href="#") Купить и сдать недвижимость
+					.col-6.order-last.d-md-none
+						.strong.nb-2 Заказать ознакомительный тур по&nbsp;всем объектам:
+						a.strong.link-modal(href="#modal-order").tdn Оставить завяку
+
+						
+
 	// end .top-line

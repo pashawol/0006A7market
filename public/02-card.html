@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>Внутренняя</title>
+		<meta name="description" content="о чем страница">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link rel="shortcut icon" type="image/ico" href="img/favicon/favicon.ico"><meta name="format-detection" content="telephone=no">
+		<link rel="image_src" href="http://genrif.ru/assets/i/soc-logo.png">
+		<meta property="og:type" content="website">
+		<meta property="og:site_name" content="content">
+		<meta property="og:title" content="content">
+		<meta property="og:description" content="content">
+		<meta property="og:url" content="content">
+		<meta property="og:locale" content="ru_RU">
+		<meta property="og:image" content="path/to/image.jpg">
+		<meta property="og:image:width" content="968">
+		<meta property="og:image:height" content="504">
+		<!-- Custom Browsers Color-->
+		<meta name="theme-color" content="#903eba">
+		<link rel="stylesheet" href="libs/swiper/css/swiper.min.css"/>
+		<link rel="stylesheet" href="libs/@fancyapps/fancybox/jquery.fancybox.min.css"/>
+		<link rel="stylesheet" href="css/main.min.css"/>
+	</head>
+	<body><!--[if lt IE 11]><p   class="browsehappy container">К сожалению, вы используете устаревший браузер. Пожалуйста, <a href="http://browsehappy.com/" target="_blank">обновите ваш браузер</a>, чтобы улучшить производительность, качество отображаемого материала и повысить безопасность.</p><![endif]-->
+		<div class="main-wrapper">
+			<!-- start .top-line-->
+			<header class="top-line block-with-lazy">
+				<div class="search-mob d-md-none">
+					<div class="container">
+						<form>
+							<input class="form-control" type="text" placeholder="Введите страну, город, название или артикул"/>
+							<button class="search-mob__btn" type="submit">
+								<svg class="icon icon-search ">
+									<use xlink:href="img/svg/sprite.svg#search"></use>
+								</svg>
+							</button>
+						</form>
+					</div>
+				</div>
+				<div class="top-line__body">
+					<div class="container">
+						<div class="row">
+							<div class="col d-lg-none"><a class="top-line__logo" href="#"><img src="img/svg/logo.png" alt=""/></a>
+							</div>
+							<div class="col text-secondary d-none d-lg-block">Турецкая недвижимость напрямую от&nbsp;застройщиков</div>
+							<div class="col-auto"><a class="top-line__link top-line__link--color link-modal" href="#modal-add-object">
+								<svg class="icon icon-add text-primary">
+									<use xlink:href="img/svg/sprite.svg#add"></use>
+								</svg>Добавить объект </a>
+							</div>
+							<div class="col-auto"><a class="top-line__link top-line__link--color link-modal" href="#modal-in">
+								<svg class="icon icon-user text-primary">
+									<use xlink:href="img/svg/sprite.svg#user"></use>
+								</svg>Войти</a>
+							</div>
+							<div class="col-auto d-xl-flex align-items-center text-right d-none d-md-block">
+								<div class="text-secondary mr-xl-2">Русскоговорящий отдел продаж: </div><a class="top-line__link" href="tel:88001234567">
+								<svg class="icon icon-telephone ">
+									<use xlink:href="img/svg/sprite.svg#telephone"></use>
+								</svg>8 800 123 45 67</a>
+							</div>
+							<div class="col-auto d-md-none">
+								<div class="toggle-menu-mobile toggle-menu-mobile--js"><span></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="top-line__mobile-hidden">
+					<div class="container">
+						<div class="row">
+							<div class="col-6 text-secondary d-md-none">Турецкая недвижимость напрямую от&nbsp;застройщиков</div>
+							<div class="col-6 d-md-none align-items-center"> <a class="top-line__link" href="mailto:info@a7.market">
+								<svg class="icon icon-email ">
+									<use xlink:href="img/svg/sprite.svg#email"></use>
+								</svg>info@a7.market</a>
+							</div>
+							<div class="col-6 d-md-none align-items-center">
+								<div class="text-secondary mb-1">Русскоговорящий отдел продаж: </div><a class="top-line__link" href="tel:88001234567">
+								<svg class="icon icon-telephone ">
+									<use xlink:href="img/svg/sprite.svg#telephone"></use>
+								</svg>8 800 123 45 67</a>
+							</div>
+							<div class="col-auto d-none d-lg-block"><a class="top-line__logo" href="#"><img src="img/svg/logo.png" alt=""/></a>
+							</div>
+							<div class="col-auto order-md-0 order-last"><a class="top-line__btn btn-light" href="https://www.youtube.com/watch?v=uPk6lQoTThE&amp;list=PLDyvV36pndZFLTE13V4qNWTZbeipNhCgQ" data-fancybox="video-gal">
+								<svg class="icon icon-youtube ">
+									<use xlink:href="img/svg/sprite.svg#youtube"></use>
+								</svg>Видео о нас</a>
+							</div>
+							<div class="col-md order-md-0 order-first">
+								<div class="search">
+									<form>
+										<svg class="icon icon-search ">
+											<use xlink:href="img/svg/sprite.svg#search"></use>
+										</svg>
+										<div class="input-group">
+											<input class="form-control" type="text" placeholder="Введите страну, город, название или артикул"/>
+											<div class="input-group-append">
+												<button class="search__btn btn-light" type="submit">Найти
+												</button>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+							<div class="col-auto"><a class="top-line__btn btn-outline-primary link-modal" href="#modal-call">Заказать звонок</a>
+							</div>
+							<div class="col-7 d-md-none">
+								<ul>
+									<li><a href="#">О компании</a></li>
+									<li><a href="#">Вид на жительство в Турции</a></li>
+									<li><a href="#">Купить и сдать недвижимость</a></li>
+								</ul>
+							</div>
+							<div class="col-6 order-last d-md-none">
+								<div class="strong nb-2">Заказать ознакомительный тур по&nbsp;всем объектам:</div><a class="strong link-modal tdn" href="#modal-order">Оставить завяку</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+			<!-- end .top-line-->
+			<div class="container">
+				<nav class="breadcrumb-slider-js swiper-container" aria-label="breadcrumb">
+					<ol class="breadcrumb swiper-wrapper" itemscope="itemscope" itemtype="http://schema.org/BreadcrumbList">
+						<li class="breadcrumb-item swiper-slide" itemprop="itemListElement" itemscope="itemscope" itemtype="http://schema.org/ListItem"><a href="/" itemprop="item"><span itemprop="name">Турция</span>
+								<meta itemprop="position" content="1"/></a></li>
+						<li class="breadcrumb-item swiper-slide" itemprop="itemListElement" itemscope="itemscope" itemtype="http://schema.org/ListItem"><a href="#" itemprop="item"><span itemprop="name">Алания</span>
+								<meta itemprop="position" content="2"/></a></li>
+						<li class="breadcrumb-item swiper-slide" itemprop="itemListElement" itemscope="itemscope" itemtype="http://schema.org/ListItem"><a href="#" itemprop="item"><span itemprop="name">Admiral Premium Residence</span>
+								<meta itemprop="position" content="3"/></a></li>
+						<li class="breadcrumb-item swiper-slide active" itemprop="itemListElement" itemscope="itemscope" itemtype="http://schema.org/ListItem"><a href="#" itemprop="item"><span itemprop="name">Квартира 158 м2 Admiral Premium Residence</span>
+								<meta itemprop="position" content="4"/></a></li>
+					</ol>
+				</nav>
+				<h1> Квартира 158 м2&nbsp;Admiral Premium Residence</h1>
+			</div>
+			<!-- start s-card-head-->
+			<div class="s-card-head" id="s-card-head">
+				<div class="container"> 
+					<div class="s-card-head__row row row row--card">
+						<div class="s-card-head__col col-lg-8   col--card">
+							<div class="slider-wrap"> 
+								<div class="s-card-head__slider slider-js swiper-container">
+									<div class="swiper-wrapper">
+										<div class="s-card-head__slide swiper-slide bg-wrap">
+											<picture class="picture-bg object-fit-js">
+												<source class="swiper-lazy" srcset="#" data-srcset="img/@2x/webp/prod.webp" type="image/webp"/>
+												<source class="swiper-lazy" srcset="#" data-srcset="img/@2x/prod.jpg" type="image/jpg"/><img class="swiper-lazy" src="#" data-src="img/@2x/prod.jpg" alt=""/>
+											</picture>
+										</div>
+										<div class="s-card-head__slide swiper-slide bg-wrap">
+											<picture class="picture-bg object-fit-js">
+												<source class="swiper-lazy" srcset="#" data-srcset="img/@2x/webp/prod.webp" type="image/webp"/>
+												<source class="swiper-lazy" srcset="#" data-srcset="img/@2x/prod.jpg" type="image/jpg"/><img class="swiper-lazy" src="#" data-src="img/@2x/prod.jpg" alt=""/>
+											</picture>
+										</div>
+										<div class="s-card-head__slide swiper-slide bg-wrap">
+											<picture class="picture-bg object-fit-js">
+												<source class="swiper-lazy" srcset="#" data-srcset="img/@2x/webp/prod.webp" type="image/webp"/>
+												<source class="swiper-lazy" srcset="#" data-srcset="img/@2x/prod.jpg" type="image/jpg"/><img class="swiper-lazy" src="#" data-src="img/@2x/prod.jpg" alt=""/>
+											</picture>
+										</div>
+									</div>
+								</div><div class="swiper-button-prev"></div>
+<div class="swiper-button-next"></div>
+								<div class="swiper-pagination"></div>
+							</div>
+						</div>
+						<div class="s-card-head__lines col">
+							<div class="s-card-head__item row">
+								<div class="col"><span class="strong">Артикул</span></div>
+								<div class="col-auto strong">133004</div>
+							</div>
+							<div class="s-card-head__item row">
+								<div class="col"><span>Тип недвижимости</span></div>
+								<div class="col-auto">квартира</div>
+							</div>
+							<div class="s-card-head__item row">
+								<div class="col"><span>Площадь</span></div>
+								<div class="col-auto">158</div>
+							</div>
+							<div class="s-card-head__item row">
+								<div class="col"><span>Этаж</span></div>
+								<div class="col-auto">9 из 15</div>
+							</div>
+							<div class="s-card-head__item row">
+								<div class="col"><span>Уровней</span></div>
+								<div class="col-auto">1</div>
+							</div>
+							<div class="s-card-head__item row">
+								<div class="col"><span>Гостинных</span></div>
+								<div class="col-auto">1</div>
+							</div>
+							<div class="s-card-head__item row">
+								<div class="col"><span>Спален</span></div>
+								<div class="col-auto">3</div>
+							</div>
+							<div class="s-card-head__item row">
+								<div class="col"><span>Санузлов</span></div>
+								<div class="col-auto">2</div>
+							</div>
+							<div class="s-card-head__item row">
+								<div class="col"><span>Балкон</span></div>
+								<div class="col-auto">да</div>
+							</div>
+							<div class="s-card-head__item row">
+								<div class="col"><span>Вид на море</span></div>
+								<div class="col-auto">да</div>
+							</div>
+							<div class="s-card-head__item row">
+								<div class="col"><span>Мебель</span></div>
+								<div class="col-auto">да</div>
+							</div>
+							<div class="s-card-head__item row">
+								<div class="col"><span>Земля в собственность</span></div>
+								<div class="col-auto">нет</div>
+							</div>
+							<div class="s-card-head__item row">
+								<div class="col"><span>Рассрочка</span></div>
+								<div class="col-auto">да</div>
+							</div>
+							<div class="s-card-head__item row">
+								<div class="col"><span>Проект</span></div>
+								<div class="col-auto text-primary">Admiral Premium Residence</div>
+							</div>
+							<div class="s-card-head__item row">
+								<div class="col"><span>Город</span></div>
+								<div class="col-auto">Алания</div>
+							</div>
+							<div class="s-card-head__item row">
+								<div class="col"><span>Год постройки</span></div>
+								<div class="col-auto">2016</div>
+							</div>
+							<div class="s-card-head__item row">
+								<div class="col"><span>Открытый бассейн</span></div>
+								<div class="col-auto">да</div>
+							</div>
+							<div class="s-card-head__item row">
+								<div class="col"><span>Закрытый бассейн</span></div>
+								<div class="col-auto">да</div>
+							</div>
+							<div class="s-card-head__item row">
+								<div class="col"><span>Спортзал</span></div>
+								<div class="col-auto">да</div>
+							</div>
+							<div class="s-card-head__item row">
+								<div class="col"><span>Сауна</span></div>
+								<div class="col-auto">да</div>
+							</div>
+							<div class="s-card-head__panel">
+								<div class="row align-items-center">
+									<div class="col h4 strong">14 520 365 ₽</div>
+									<div class="col-auto">
+										<div class="s-card-head__input-wrap form-group">
+											<select class="s-card-head__input form-control" name="select">
+												<option class="d-none" value="₽" disabled="disabled" selected="selected">₽</option>
+												<option value=" ₽ 1">₽ 1</option>
+												<option value=" ₽ 2">₽ 2</option>
+												<option value=" ₽ 3">₽ 3</option>
+												<option value=" ₽ 4">₽ 4</option>
+											</select>
+										</div>
+										<!-- +e.input-wrap-->
+									</div>
+								</div><a class="s-card-head__btn link-modal" href="#modal-book">Забронировать</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- end s-card-head-->
+			<!-- start s-layout-->
+			<div class="s-layout" id="s-layout">
+				<div class="container">
+					<div class="s-layout__title">Планировка
+					</div>
+					<div class="tabs">
+						<div class="row--card row">
+							<div class="col order-lg-last">
+								<div class="tabs__caption">
+									<div class="tabs__btn active">	Уровень 5</div>
+									<div class="tabs__btn">Уровень 4</div>
+									<div class="tabs__btn">Уровень 3</div>
+									<div class="tabs__btn">Уровень 2</div>
+									<div class="tabs__btn">Уровень 1</div>
+								</div>
+							</div>
+							<div class="col-lg-8 col--card">
+								<div class="tabs__wrap">
+														<div class="tabs__content active">
+															<!-- picture-->
+															<picture> 
+																<source srcset="img/@2x/layout.jpg" type="image/jpg" media="(min-width:576px)"/>
+																<source srcset="img/@1x/layout.jpg" type="image/jpg"/><img src="img/@2x/layout.jpg" alt=""/>
+															</picture>
+															<!-- /picture-->
+														</div>
+														<div class="tabs__content">
+															<!-- picture-->
+															<picture> 
+																<source srcset="img/@2x/layout.jpg" type="image/jpg" media="(min-width:576px)"/>
+																<source srcset="img/@1x/layout.jpg" type="image/jpg"/><img src="img/@2x/layout.jpg" alt=""/>
+															</picture>
+															<!-- /picture-->
+														</div>
+														<div class="tabs__content">
+															<!-- picture-->
+															<picture> 
+																<source srcset="img/@2x/layout.jpg" type="image/jpg" media="(min-width:576px)"/>
+																<source srcset="img/@1x/layout.jpg" type="image/jpg"/><img src="img/@2x/layout.jpg" alt=""/>
+															</picture>
+															<!-- /picture-->
+														</div>
+														<div class="tabs__content">
+															<!-- picture-->
+															<picture> 
+																<source srcset="img/@2x/layout.jpg" type="image/jpg" media="(min-width:576px)"/>
+																<source srcset="img/@1x/layout.jpg" type="image/jpg"/><img src="img/@2x/layout.jpg" alt=""/>
+															</picture>
+															<!-- /picture-->
+														</div>
+														<div class="tabs__content">
+															<!-- picture-->
+															<picture> 
+																<source srcset="img/@2x/layout.jpg" type="image/jpg" media="(min-width:576px)"/>
+																<source srcset="img/@1x/layout.jpg" type="image/jpg"/><img src="img/@2x/layout.jpg" alt=""/>
+															</picture>
+															<!-- /picture-->
+														</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- end s-layout-->
+			<!-- start s-map-->
+			<div class="s-map" id="s-map">
+				<div class="container"> 
+					<div class="s-map__row row row row--card">
+						<div class="s-map__col col-lg-8   col--card">
+							<div class="s-map__title">Проект Admiral Premium Residence (Алания, 2017 год)
+							</div>
+							<div class="slider-wrap"> 
+								<div class="s-map__slider slider-js swiper-container">
+									<div class="swiper-wrapper">
+										<div class="s-map__slide swiper-slide bg-wrap">
+											<picture class="picture-bg object-fit-js">
+												<source class="swiper-lazy" srcset="#" data-srcset="img/@2x/webp/map.webp" type="image/webp"/>
+												<source class="swiper-lazy" srcset="#" data-srcset="img/@2x/map.jpg" type="image/jpg"/><img class="swiper-lazy" src="#" data-src="img/@2x/map.jpg" alt=""/>
+											</picture>
+										</div>
+										<div class="s-map__slide swiper-slide bg-wrap">
+											<picture class="picture-bg object-fit-js">
+												<source class="swiper-lazy" srcset="#" data-srcset="img/@2x/webp/map.webp" type="image/webp"/>
+												<source class="swiper-lazy" srcset="#" data-srcset="img/@2x/map.jpg" type="image/jpg"/><img class="swiper-lazy" src="#" data-src="img/@2x/map.jpg" alt=""/>
+											</picture>
+										</div>
+										<div class="s-map__slide swiper-slide bg-wrap">
+											<picture class="picture-bg object-fit-js">
+												<source class="swiper-lazy" srcset="#" data-srcset="img/@2x/webp/map.webp" type="image/webp"/>
+												<source class="swiper-lazy" srcset="#" data-srcset="img/@2x/map.jpg" type="image/jpg"/><img class="swiper-lazy" src="#" data-src="img/@2x/map.jpg" alt=""/>
+											</picture>
+										</div>
+									</div>
+								</div><div class="swiper-button-prev"></div>
+<div class="swiper-button-next"></div>
+								<div class="swiper-pagination"></div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="s-map__title">На карте
+							</div>
+							<div class="s-map__map-wrap"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2348.6391160046664!2d27.5947711145534!3d53.93815503791993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbcf6b3646c9fd%3A0xd6c4dd34cf0132f8!2z0YPQuy4g0JLQvtGB0YLQvtGH0L3QsNGPIDEyNSwg0JzQuNC90YHQug!5e0!3m2!1sru!2sby!4v1583704507010!5m2!1sru!2sby" width="600" height="450" frameborder="0"  allowfullscreen=""></iframe>
+							</div>
+						</div>
+					</div>
+					<div class="s-map__row row row row--card">
+						<div class="col-lg-8 col--card">
+							<p>Апарт-отель Zoku Amsterdam воплощает собой новую концепцию отеля, подходящего для работы и проживания. В апарт-отеле Zoku, рассчитанном на длительное размещение бизнес-путешественников, предлагается полный спектр гостиничных услуг. На крыше обустроена терраса с видом на город. На территории работает ресторан. Кроме того, к услугам гостей частная парковка.</p>
+							<p>В апарт-отеле предлагается размещение в лофтах с кондиционером, телевизором с плоским экраном и кухонным столом посередине. В числе удобств каждого лофта — диван для отдыха после напряженного дня и полностью оборудованная кухня для приготовления пищи. В распоряжении гостей всех номеров собственная ванная комната с душем, феном и бесплатными туалетно-косметическими принадлежностями. На всей территории апарт-отеля Zoku предоставляется бесплатный высокоскоростной Wi-Fi.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- end s-map-->
+			<!-- start s-catalog-->
+			<div class="s-catalog">
+				<div class="container"> 
+					<div class="s-catalog__title">Похожие объекты в Admiral Premium Residence
+					</div>
+					<div class="slider-main-wrap">
+						<div class="s-catalog__slider slider-main-js swiper-container">
+							<div class="s-catalog__swiper-wrapper swiper-wrapper">
+								<div class="s-catalog__slide swiper-slide">
+									<div class="prod-item"><a class="slider-wrap" href="#">
+											<div class="prod-item__slider slider-prod-js swiper-container">
+												<div class="swiper-wrapper">
+													<div class="prod-item__slide swiper-slide bg-wrap">
+														<picture class="picture-bg object-fit-js">
+															<source class="swiper-lazy" srcset="#" data-srcset="img/@2x/webp/prod-1.webp" type="image/webp"/>
+															<source class="swiper-lazy" srcset="#" data-srcset="img/@2x/prod-1.jpg" type="image/jpg"/><img class="swiper-lazy" src="#" data-src="img/@2x/prod-1.jpg" alt=""/>
+														</picture>
+													</div>
+													<div class="prod-item__slide swiper-slide bg-wrap">
+														<picture class="picture-bg object-fit-js">
+															<source class="swiper-lazy" srcset="#" data-srcset="img/@2x/webp/prod-2.webp" type="image/webp"/>
+															<source class="swiper-lazy" srcset="#" data-srcset="img/@2x/prod-2.jpg" type="image/jpg"/><img class="swiper-lazy" src="#" data-src="img/@2x/prod-2.jpg" alt=""/>
+														</picture>
+													</div>
+													<div class="prod-item__slide swiper-slide bg-wrap">
+														<picture class="picture-bg object-fit-js">
+															<source class="swiper-lazy" srcset="#" data-srcset="img/@2x/webp/prod-3.webp" type="image/webp"/>
+															<source class="swiper-lazy" srcset="#" data-srcset="img/@2x/prod-3.jpg" type="image/jpg"/><img class="swiper-lazy" src="#" data-src="img/@2x/prod-3.jpg" alt=""/>
+														</picture>
+													</div>
+													<div class="prod-item__slide swiper-slide bg-wrap">
+														<picture class="picture-bg object-fit-js">
+															<source class="swiper-lazy" srcset="#" data-srcset="img/@2x/webp/prod-4.webp" type="image/webp"/>
+															<source class="swiper-lazy" srcset="#" data-srcset="img/@2x/prod-4.jpg" type="image/jpg"/><img class="swiper-lazy" src="#" data-src="img/@2x/prod-4.jpg" alt=""/>
+														</picture>
+													</div>
+													<div class="prod-item__slide swiper-slide bg-wrap">
+														<picture class="picture-bg object-fit-js">
+															<source class="swiper-lazy" srcset="#" data-srcset="img/@2x/webp/prod-5.webp" type="image/webp"/>
+															<source class="swiper-lazy" srcset="#" data-srcset="img/@2x/prod-5.jpg" type="image/jpg"/><img class="swiper-lazy" src="#" data-src="img/@2x/prod-5.jpg" alt=""/>
+														</picture>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-pagination-full swiper-pagination swiper-pagination-hover"></div>
+											<div class="swiper-pagination swiper-pagination-hover"></div></a>
+										<div class="prod-item__caption">
+											<div class="prod-item__title"><a class="strong" href="#">Квартира 158 м2 Admiral Premium Residence</a>
+											</div>
+											<p>Алания, 2016 год постройки</p>
+											<div class="prod-item__small">Вид на море, балкон, сауна
+											</div>
+											<div class="prod-item__price">15 856 960 ₽
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="s-catalog__slide swiper-slide">
+									<div class="prod-item"><a class="slider-wrap" href="#">
+											<div class="prod-item__slider slider-prod-js swiper-container">
+												<div class="swiper-wrapper">
+													<div class="prod-item__slide swiper-slide bg-wrap">
+														<picture class="picture-bg object-fit-js">
+															<source class="swiper-lazy" srcset="#" data-srcset="img/@2x/webp/prod-1.webp" type="image/webp"/>
+															<source class="swiper-lazy" srcset="#" data-srcset="img/@2x/prod-1.jpg" type="image/jpg"/><img class="swiper-lazy" src="#" data-src="img/@2x/prod-1.jpg" alt=""/>
+														</picture>
+													</div>
+													<div class="prod-item__slide swiper-slide bg-wrap">
+														<picture class="picture-bg object-fit-js">
+															<source class="swiper-lazy" srcset="#" data-srcset="img/@2x/webp/prod-2.webp" type="image/webp"/>
+															<source class="swiper-lazy" srcset="#" data-srcset="img/@2x/prod-2.jpg" type="image/jpg"/><img class="swiper-lazy" src="#" data-src="img/@2x/prod-2.jpg" alt=""/>
+														</picture>
+													</div>
+													<div class="prod-item__slide swiper-slide bg-wrap">
+														<picture class="picture-bg object-fit-js">
+															<source class="swiper-lazy" srcset="#" data-srcset="img/@2x/webp/prod-3.webp" type="image/webp"/>
+															<source class="swiper-lazy" srcset="#" data-srcset="img/@2x/prod-3.jpg" type="image/jpg"/><img class="swiper-lazy" src="#" data-src="img/@2x/prod-3.jpg" alt=""/>
+														</picture>
+													</div>
+													<div class="prod-item__slide swiper-slide bg-wrap">
+														<picture class="picture-bg object-fit-js">
+															<source class="swiper-lazy" srcset="#" data-srcset="img/@2x/webp/prod-4.webp" type="image/webp"/>
+															<source class="swiper-lazy" srcset="#" data-srcset="img/@2x/prod-4.jpg" type="image/jpg"/><img class="swiper-lazy" src="#" data-src="img/@2x/prod-4.jpg" alt=""/>
+														</picture>
+													</div>
+													<div class="prod-item__slide swiper-slide bg-wrap">
+														<picture class="picture-bg object-fit-js">
+															<source class="swiper-lazy" srcset="#" data-srcset="img/@2x/webp/prod-5.webp" type="image/webp"/>
+															<source class="swiper-lazy" srcset="#" data-srcset="img/@2x/prod-5.jpg" type="image/jpg"/><img class="swiper-lazy" src="#" data-src="img/@2x/prod-5.jpg" alt=""/>
+														</picture>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-pagination-full swiper-pagination swiper-pagination-hover"></div>
+											<div class="swiper-pagination swiper-pagination-hover"></div></a>
+										<div class="prod-item__caption">
+											<div class="prod-item__title"><a class="strong" href="#">Квартира 158 м2 Admiral Premium Residence</a>
+											</div>
+											<p>Алания, 2016 год постройки</p>
+											<div class="prod-item__small">Вид на море, балкон, сауна
+											</div>
+											<div class="prod-item__price">15 856 960 ₽
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="s-catalog__slide swiper-slide">
+									<div class="prod-item"><a class="slider-wrap" href="#">
+											<div class="prod-item__slider slider-prod-js swiper-container">
+												<div class="swiper-wrapper">
+													<div class="prod-item__slide swiper-slide bg-wrap">
+														<picture class="picture-bg object-fit-js">
+															<source class="swiper-lazy" srcset="#" data-srcset="img/@2x/webp/prod-1.webp" type="image/webp"/>
+															<source class="swiper-lazy" srcset="#" data-srcset="img/@2x/prod-1.jpg" type="image/jpg"/><img class="swiper-lazy" src="#" data-src="img/@2x/prod-1.jpg" alt=""/>
+														</picture>
+													</div>
+													<div class="prod-item__slide swiper-slide bg-wrap">
+														<picture class="picture-bg object-fit-js">
+															<source class="swiper-lazy" srcset="#" data-srcset="img/@2x/webp/prod-2.webp" type="image/webp"/>
+															<source class="swiper-lazy" srcset="#" data-srcset="img/@2x/prod-2.jpg" type="image/jpg"/><img class="swiper-lazy" src="#" data-src="img/@2x/prod-2.jpg" alt=""/>
+														</picture>
+													</div>
+													<div class="prod-item__slide swiper-slide bg-wrap">
+														<picture class="picture-bg object-fit-js">
+															<source class="swiper-lazy" srcset="#" data-srcset="img/@2x/webp/prod-3.webp" type="image/webp"/>
+															<source class="swiper-lazy" srcset="#" data-srcset="img/@2x/prod-3.jpg" type="image/jpg"/><img class="swiper-lazy" src="#" data-src="img/@2x/prod-3.jpg" alt=""/>
+														</picture>
+													</div>
+													<div class="prod-item__slide swiper-slide bg-wrap">
+														<picture class="picture-bg object-fit-js">
+															<source class="swiper-lazy" srcset="#" data-srcset="img/@2x/webp/prod-4.webp" type="image/webp"/>
+															<source class="swiper-lazy" srcset="#" data-srcset="img/@2x/prod-4.jpg" type="image/jpg"/><img class="swiper-lazy" src="#" data-src="img/@2x/prod-4.jpg" alt=""/>
+														</picture>
+													</div>
+													<div class="prod-item__slide swiper-slide bg-wrap">
+														<picture class="picture-bg object-fit-js">
+															<source class="swiper-lazy" srcset="#" data-srcset="img/@2x/webp/prod-5.webp" type="image/webp"/>
+															<source class="swiper-lazy" srcset="#" data-srcset="img/@2x/prod-5.jpg" type="image/jpg"/><img class="swiper-lazy" src="#" data-src="img/@2x/prod-5.jpg" alt=""/>
+														</picture>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-pagination-full swiper-pagination swiper-pagination-hover"></div>
+											<div class="swiper-pagination swiper-pagination-hover"></div></a>
+										<div class="prod-item__caption">
+											<div class="prod-item__title"><a class="strong" href="#">Квартира 158 м2 Admiral Premium Residence</a>
+											</div>
+											<p>Алания, 2016 год постройки</p>
+											<div class="prod-item__small">Вид на море, балкон, сауна
+											</div>
+											<div class="prod-item__price">15 856 960 ₽
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="s-catalog__slide swiper-slide">
+									<div class="prod-item"><a class="slider-wrap" href="#">
+											<div class="prod-item__slider slider-prod-js swiper-container">
+												<div class="swiper-wrapper">
+													<div class="prod-item__slide swiper-slide bg-wrap">
+														<picture class="picture-bg object-fit-js">
+															<source class="swiper-lazy" srcset="#" data-srcset="img/@2x/webp/prod-1.webp" type="image/webp"/>
+															<source class="swiper-lazy" srcset="#" data-srcset="img/@2x/prod-1.jpg" type="image/jpg"/><img class="swiper-lazy" src="#" data-src="img/@2x/prod-1.jpg" alt=""/>
+														</picture>
+													</div>
+													<div class="prod-item__slide swiper-slide bg-wrap">
+														<picture class="picture-bg object-fit-js">
+															<source class="swiper-lazy" srcset="#" data-srcset="img/@2x/webp/prod-2.webp" type="image/webp"/>
+															<source class="swiper-lazy" srcset="#" data-srcset="img/@2x/prod-2.jpg" type="image/jpg"/><img class="swiper-lazy" src="#" data-src="img/@2x/prod-2.jpg" alt=""/>
+														</picture>
+													</div>
+													<div class="prod-item__slide swiper-slide bg-wrap">
+														<picture class="picture-bg object-fit-js">
+															<source class="swiper-lazy" srcset="#" data-srcset="img/@2x/webp/prod-3.webp" type="image/webp"/>
+															<source class="swiper-lazy" srcset="#" data-srcset="img/@2x/prod-3.jpg" type="image/jpg"/><img class="swiper-lazy" src="#" data-src="img/@2x/prod-3.jpg" alt=""/>
+														</picture>
+													</div>
+													<div class="prod-item__slide swiper-slide bg-wrap">
+														<picture class="picture-bg object-fit-js">
+															<source class="swiper-lazy" srcset="#" data-srcset="img/@2x/webp/prod-4.webp" type="image/webp"/>
+															<source class="swiper-lazy" srcset="#" data-srcset="img/@2x/prod-4.jpg" type="image/jpg"/><img class="swiper-lazy" src="#" data-src="img/@2x/prod-4.jpg" alt=""/>
+														</picture>
+													</div>
+													<div class="prod-item__slide swiper-slide bg-wrap">
+														<picture class="picture-bg object-fit-js">
+															<source class="swiper-lazy" srcset="#" data-srcset="img/@2x/webp/prod-5.webp" type="image/webp"/>
+															<source class="swiper-lazy" srcset="#" data-srcset="img/@2x/prod-5.jpg" type="image/jpg"/><img class="swiper-lazy" src="#" data-src="img/@2x/prod-5.jpg" alt=""/>
+														</picture>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-pagination-full swiper-pagination swiper-pagination-hover"></div>
+											<div class="swiper-pagination swiper-pagination-hover"></div></a>
+										<div class="prod-item__caption">
+											<div class="prod-item__title"><a class="strong" href="#">Квартира 158 м2 Admiral Premium Residence</a>
+											</div>
+											<p>Алания, 2016 год постройки</p>
+											<div class="prod-item__small">Вид на море, балкон, сауна
+											</div>
+											<div class="prod-item__price">15 856 960 ₽
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="s-catalog__arrow swiper-button-prev swiper-button-prev-lg">
+						</div>
+						<div class="s-catalog__arrow swiper-button-next swiper-button-next-lg">
+						</div>
+						<div class="s-catalog__control swiper-pagination swiper-pagination-lg"> 
+						</div>
+					</div><a class="s-catalog__btn" href="#">Все проекты Admiral Premium Residence</a>
+				</div>
+			</div>
+			<!-- end s-catalog-->
+			<!-- start s-banner-->
+			<div class="s-banner" id="s-banner">
+				<div class="container">
+					<div class="s-banner__block bg-wrap">
+						<!-- picture-->
+						<picture class="picture-bg"> 
+							<source srcset="img/@2x/Admiral00019.jpg" type="image/jpg" media="(min-width:576px)"/>
+							<source srcset="img/@1x/Admiral00019.jpg" type="image/jpg"/><img src="img/@2x/Admiral00019.jpg" alt=""/>
+						</picture>
+						<!-- /picture-->
+						<div class="h1">Только Вы и море.</div>
+						<div class="h1 strong">Попробуйте бесплатно 3&nbsp;дня проживания в&nbsp;Admiral Premium Residence</div>
+						<div class="h5 strong">Бесплатно доставим Вас в&nbsp;резиденцию из&nbsp;аэропорта Алании, а&nbsp;также недорого из&nbsp;аэропорта Анталии</div>
+						<p>Дадим менеджера с&nbsp;автомобилем и&nbsp;покажем Вам все наши объекты на&nbsp;побережье средиземного моря</p><a class="s-banner__btn" href="#">Воспользоваться предложением</a>
+					</div>
+				</div>
+			</div>
+			<!-- end s-banner-->
+			<footer class="footer block-with-lazy">
+				<div class="container">
+					<div class="footer__head row">
+						<div class="col-lg-3 col-sm-6"><a class="footer__logo" href="#"><img src="img/svg/logo.png" alt=""/></a>
+							<div class="footer__logo-caption text-secondary">Турецкая недвижимость напрямую от застройщиков
+							</div>
+						</div>
+						<div class="col-lg-3 col-sm-6">
+							<ul>
+								<li><a href="#">О компании</a></li>
+								<li><a href="#">Вид на жительство в Турции</a></li>
+								<li><a href="#">Купить и сдать недвижимость</a></li>
+							</ul><a class="footer__btn btn-light" href="https://www.youtube.com/watch?v=uPk6lQoTThE&amp;list=PLDyvV36pndZFLTE13V4qNWTZbeipNhCgQ" data-fancybox="video-gal">
+							<svg class="icon icon-youtube ">
+								<use xlink:href="img/svg/sprite.svg#youtube"></use>
+							</svg>Видео о нас</a>
+						</div>
+						<div class="col-lg-3 col-sm-6">
+							<div class="row">
+								<div class="col-auto"><a class="footer__link footer__link--color link-modal" href="#modal-add-object">
+									<svg class="icon icon-add text-primary">
+										<use xlink:href="img/svg/sprite.svg#add"></use>
+									</svg>Добавить объект </a>
+								</div>
+								<div class="col-auto"><a class="footer__link footer__link--color link-modal" href="#modal-in">
+									<svg class="icon icon-user text-primary">
+										<use xlink:href="img/svg/sprite.svg#user"></use>
+									</svg>Войти</a>
+								</div>
+							</div>
+							<div class="footer__strong strong nb-2">Заказать ознакомительный тур по&nbsp;всем объектам:
+							</div><a class="strong link-modal tdn" href="#modal-order">Оставить завяку</a>
+						</div>
+						<div class="col-lg-3 col-sm-6"><a class="footer__link" href="mailto:info@a7.market">
+							<svg class="icon icon-email ">
+								<use xlink:href="img/svg/sprite.svg#email"></use>
+							</svg>info@a7.market</a>
+							<div class="text-secondary mb-1">Русскоговорящий отдел продаж: </div><a class="footer__link" href="tel:88001234567">
+							<svg class="icon icon-telephone ">
+								<use xlink:href="img/svg/sprite.svg#telephone"></use>
+							</svg>8 800 123 45 67</a><br/><a class="footer__btn btn-outline-primary link-modal" href="#modal-call">Заказать звонок</a>
+						</div>
+					</div>
+					<div class="footer__foot row">
+						<div class="footer__copy col-sm">© 2020 A7.market. Все права защищены.
+						</div>
+						<div class="col-sm-auto"><a class="text-secondary" href="#">Политика конфиденциальности </a></div>
+						<div class="col-sm-auto"><a class="text-secondary" href="#">Пользовательское соглашение</a></div>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<div class="d-none">
+			<div class="  modal-win modal-form" id="modal-call">
+				<div class="form-wrap">
+					<form>
+						<input type="hidden" name="example-input-field"/>
+						<input class="order" type="hidden" name="order" value="Заявка  с сайта"/>
+						<input class="utm_source" type="hidden" name="utm_source"/>
+						<input class="utm_term" type="hidden" name="utm_term"/>
+						<input class="utm_medium" type="hidden" name="utm_medium"/>
+						<input class="utm_campaign" type="hidden" name="utm_campaign"/>
+						<div class="text-center">
+							<div class="form-wrap__title h3 strong">Заказать звонок
+							</div>
+							<div class="h5 mb-4">На&nbsp;какой номер Вам перезвонить?</div>
+						</div>
+						<div class="form-wrap__input-wrap form-group"><input class="form-wrap__input form-control form-control-lg" type="tel" placeholder="Введите телефон" name="tel" required="required"/>
+						</div>
+						<!-- +e.input-wrap-->
+						<button class="form-wrap__btn btn-lg" type="submit"> Заказать звонок
+						</button>
+						<div class="form-wrap__polite">
+							<label class="custom-input"><input class="custom-input__input" type="checkbox" name="checkbox" checked="checked"/><span class="custom-input__lab"></span><small class="custom-input__text text-secondary">Согласен на обработку и хранение моих персональных данных в соответствии с условиями</small>
+							</label>
+						</div>
+					</form>
+				</div>
+			</div>
+			<!-- #modal-call-->
+			<div class="  modal-win modal-form" id="modal-order">
+				<div class="form-wrap">
+					<form>
+						<input type="hidden" name="example-input-field"/>
+						<input class="order" type="hidden" name="order" value="Заявка  с сайта"/>
+						<input class="utm_source" type="hidden" name="utm_source"/>
+						<input class="utm_term" type="hidden" name="utm_term"/>
+						<input class="utm_medium" type="hidden" name="utm_medium"/>
+						<input class="utm_campaign" type="hidden" name="utm_campaign"/>
+						<div class="text-center">
+							<div class="form-wrap__title h3 strong">Заказать ознакомительный тур по&nbsp;всем объектам
+							</div>
+							<div class="h5 mb-4">Заполните форму, мы&nbsp;свяжемся с&nbsp;Вами в&nbsp;ближайшее время.</div>
+						</div>
+						<div class="form-wrap__input-wrap form-group"><input class="form-wrap__input form-control form-control-lg" type="text" placeholder="Ваше Имя" name="text" required="required"/> 
+						</div>
+						<!-- +e.input-wrap-->
+						<div class="form-wrap__input-wrap form-group"><input class="form-wrap__input form-control form-control-lg" type="tel" placeholder="Введите телефон" name="tel" required="required"/>
+						</div>
+						<!-- +e.input-wrap-->
+						<button class="form-wrap__btn btn-lg" type="submit"> Заказать ознакомительный тур
+						</button>
+						<div class="form-wrap__polite">
+							<label class="custom-input"><input class="custom-input__input" type="checkbox" name="checkbox" checked="checked"/><span class="custom-input__lab"></span><small class="custom-input__text text-secondary">Согласен на обработку и хранение моих персональных данных в соответствии с условиями</small>
+							</label>
+						</div>
+					</form>
+				</div>
+			</div>
+			<!-- #modal-order-->
+			<div class="  modal-win modal-form" id="modal-book">
+				<div class="form-wrap">
+					<form>
+						<input type="hidden" name="example-input-field"/>
+						<input class="order" type="hidden" name="order" value="Заявка  с сайта"/>
+						<input class="utm_source" type="hidden" name="utm_source"/>
+						<input class="utm_term" type="hidden" name="utm_term"/>
+						<input class="utm_medium" type="hidden" name="utm_medium"/>
+						<input class="utm_campaign" type="hidden" name="utm_campaign"/>
+						<div class="text-center">
+							<div class="form-wrap__title h3 strong">Забронировать
+							</div>
+							<div class="h5 mb-4">Заполните форму, мы&nbsp;свяжемся с&nbsp;Вами в&nbsp;ближайшее время.</div>
+						</div>
+						<div class="form-wrap__input-wrap form-group"><input class="form-wrap__input form-control form-control-lg" type="text" placeholder="Ваше Имя" name="text" required="required"/> 
+						</div>
+						<!-- +e.input-wrap-->
+						<div class="form-wrap__input-wrap form-group"><input class="form-wrap__input form-control form-control-lg" type="tel" placeholder="Введите телефон" name="tel" required="required"/>
+						</div>
+						<!-- +e.input-wrap-->
+						<button class="form-wrap__btn btn-lg" type="submit"> Заказать ознакомительный тур
+						</button>
+						<div class="form-wrap__polite">
+							<label class="custom-input"><input class="custom-input__input" type="checkbox" name="checkbox" checked="checked"/><span class="custom-input__lab"></span><small class="custom-input__text text-secondary">Согласен на обработку и хранение моих персональных данных в соответствии с условиями</small>
+							</label>
+						</div>
+					</form>
+				</div>
+			</div>
+			<!-- #modal-book-->
+			<div class="  modal-win modal-form" id="modal-cuopon">
+				<div class="form-wrap">
+					<form>
+						<input type="hidden" name="example-input-field"/>
+						<input class="order" type="hidden" name="order" value="Заявка  с сайта"/>
+						<input class="utm_source" type="hidden" name="utm_source"/>
+						<input class="utm_term" type="hidden" name="utm_term"/>
+						<input class="utm_medium" type="hidden" name="utm_medium"/>
+						<input class="utm_campaign" type="hidden" name="utm_campaign"/>
+						<div class="text-center">
+							<div class="form-wrap__title h3 strong">Забронировать
+							</div>
+							<div class="h5 mb-4">Заполните форму, мы&nbsp;свяжемся с&nbsp;Вами в&nbsp;ближайшее время.</div>
+						</div>
+						<div class="form-wrap__input-wrap form-group"><input class="form-wrap__input form-control form-control-lg" type="text" placeholder="Ваше Имя" name="text" required="required"/> 
+						</div>
+						<!-- +e.input-wrap-->
+						<div class="form-wrap__input-wrap form-group"><input class="form-wrap__input form-control form-control-lg" type="tel" placeholder="Введите телефон" name="tel" required="required"/>
+						</div>
+						<!-- +e.input-wrap-->
+						<button class="form-wrap__btn btn-lg" type="submit"> Заказать ознакомительный тур
+						</button>
+						<div class="form-wrap__polite">
+							<label class="custom-input"><input class="custom-input__input" type="checkbox" name="checkbox" checked="checked"/><span class="custom-input__lab"></span><small class="custom-input__text text-secondary">Согласен на обработку и хранение моих персональных данных в соответствии с условиями</small>
+							</label>
+						</div>
+					</form>
+				</div>
+			</div>
+			<!-- #modal-cuopon-->
+			<div class="  modal-win modal-form" id="modal-reg">
+				<div class="form-wrap">
+					<form>
+						<input type="hidden" name="example-input-field"/>
+						<input class="order" type="hidden" name="order" value="Заявка  с сайта"/>
+						<input class="utm_source" type="hidden" name="utm_source"/>
+						<input class="utm_term" type="hidden" name="utm_term"/>
+						<input class="utm_medium" type="hidden" name="utm_medium"/>
+						<input class="utm_campaign" type="hidden" name="utm_campaign"/>
+						<div class="text-center">
+							<div class="form-wrap__title h3 strong">Регистрация 
+							</div>
+						</div>
+						<div class="form-wrap__input-wrap form-group"><input class="form-wrap__input form-control form-control-lg" type="email" placeholder="Электронная почта" name="email" required="required"/> 
+						</div>
+						<!-- +e.input-wrap-->
+						<div class="form-wrap__input-wrap form-group"><input class="form-wrap__input form-control form-control-lg" type="password" placeholder="Пароль" name="password" required="required"/>
+						</div>
+						<!-- +e.input-wrap-->
+						<button class="form-wrap__btn btn-lg" type="submit">Зарегистрироваться
+						</button>
+						<div class="mb-1 text-center">Вы зарегистрированы?  <a class="tdn link-modal" href="#modal-in">Войти</a> </div>
+					</form>
+				</div>
+			</div>
+			<!-- #modal-reg-->
+			<div class="  modal-win modal-form" id="modal-in">
+				<div class="form-wrap">
+					<form>
+						<input type="hidden" name="example-input-field"/>
+						<input class="order" type="hidden" name="order" value="Заявка  с сайта"/>
+						<input class="utm_source" type="hidden" name="utm_source"/>
+						<input class="utm_term" type="hidden" name="utm_term"/>
+						<input class="utm_medium" type="hidden" name="utm_medium"/>
+						<input class="utm_campaign" type="hidden" name="utm_campaign"/>
+						<div class="text-center">
+							<div class="form-wrap__title h3 strong">Авторизация
+							</div>
+							<div class="h5 mb-4">Заполните форму, мы&nbsp;свяжемся с&nbsp;Вами в&nbsp;ближайшее время.</div>
+						</div>
+						<div class="form-wrap__input-wrap form-group"><input class="form-wrap__input form-control form-control-lg" type="email" placeholder="Электронная почта" name="email" required="required"/> 
+						</div>
+						<!-- +e.input-wrap-->
+						<div class="form-wrap__input-wrap form-group"><input class="form-wrap__input form-control form-control-lg" type="password" placeholder="Пароль" name="password" required="required"/>
+						</div>
+						<!-- +e.input-wrap-->
+						<button class="form-wrap__btn btn-lg" type="submit">Войти
+						</button>
+						<div class="mb-1 text-center">Вы не зарегистрированы? <a class="tdn link-modal" href="#modal-reg">Зарегистрироваться</a></div>
+						<div class="mb-1 text-center">Забыли пароль? <a class="tdn" href="#">Восстановить пароль</a></div>
+					</form>
+				</div>
+			</div>
+			<!-- #modal-in-->
+			<div class="  modal-win modal-form" id="modal-add-object">
+				<div class="form-wrap">
+					<form>
+						<input type="hidden" name="example-input-field"/>
+						<input class="order" type="hidden" name="order" value="Заявка  с сайта"/>
+						<input class="utm_source" type="hidden" name="utm_source"/>
+						<input class="utm_term" type="hidden" name="utm_term"/>
+						<input class="utm_medium" type="hidden" name="utm_medium"/>
+						<input class="utm_campaign" type="hidden" name="utm_campaign"/>
+						<div class="text-center">
+							<div class="form-wrap__title h3 strong">Добавлять объекты могут только зарегистрированные пользователи
+							</div>
+							<div class="h5 mb-4">Введите ваш логин и пароль.</div>
+						</div>
+						<div class="form-wrap__input-wrap form-group"><input class="form-wrap__input form-control form-control-lg" type="email" placeholder="Электронная почта" name="email" required="required"/> 
+						</div>
+						<!-- +e.input-wrap-->
+						<div class="form-wrap__input-wrap form-group"><input class="form-wrap__input form-control form-control-lg" type="password" placeholder="Пароль" name="password" required="required"/>
+						</div>
+						<!-- +e.input-wrap-->
+						<button class="form-wrap__btn btn-lg" type="submit">Войти
+						</button>
+						<div class="mb-1 text-center">Вы не зарегистрированы? <a class="tdn link-modal" href="#modal-reg">Зарегистрироваться</a></div>
+						<div class="mb-1 text-center">Забыли пароль? <a class="tdn" href="#">Восстановить пароль</a></div>
+					</form>
+				</div>
+			</div>
+			<!-- #modal-add-object-->
+			<div class="  modal-win modal-form" id="modal-thanks">
+				<div class="form-wrap">
+					<div class="text-center">
+						<div class="form-wrap__title h3 strong">Спасибо за обращение!
+						</div>
+						<div class="h5 mb-4">Мы&nbsp;свяжемся с&nbsp;Вами в&nbsp;ближайшее время для уточнения деталей.</div>
+					</div>
+				</div>
+			</div>
+			<!-- #modal-thanks-->
+		</div>
+		<!-- modal-->
+		<script src="js/lazy.js"></script>
+		<script src="libs/jquery/jquery.min.js"></script>
+		<!-- полифил для picture-->
+		<script src="libs/picturefill/picturefill.min.js"></script>
+		<!-- полифил для object-fit-->
+		<script src="libs/object-fit-images/ofi.min.js"></script>
+		<!-- modal libs-->
+		<script src="libs/@fancyapps/fancybox/jquery.fancybox.min.js"></script>
+		<!-- modal libs-->
+		<!-- slider libs-->
+		<script src="libs/swiper/js/swiper.min.js"></script>
+		<!-- /slider libs-->
+		<!-- for svg libs-->
+		<script src="libs/svg4everybody/svg4everybody.min.js"></script>
+		<!-- /for svg libs-->
+		<script src="libs/inputmask/jquery.inputmask.min.js"></script>
+		<script src="js/common.js"></script>
+	</body>
+</html>

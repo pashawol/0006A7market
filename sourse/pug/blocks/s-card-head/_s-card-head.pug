@@ -1,0 +1,63 @@
+mixin s-card-head()
+	// start s-card-head
+	+b.s-card-head#s-card-head&attributes(attributes)
+		.container 
+			+e.row.row.row--card
+				.s-card-head__col.col-lg-8(class="  col--card")
+					.slider-wrap 
+						+e.slider.slider-js.swiper-container
+							.swiper-wrapper
+								- for (var x = 0; x < 3; x++)
+									+e.slide.swiper-slide.bg-wrap
+										picture.picture-bg.object-fit-js
+											source.swiper-lazy(srcset="#" data-srcset="img/@2x/webp/prod.webp" type=`image/webp`)
+											//- source.swiper-lazy(srcset="#" data-srcset="img/@1x/webp/prod.webp"  type=`image/webp`)
+											
+											source.swiper-lazy(srcset="#" data-srcset="img/@2x/prod.jpg"  type=`image/jpg`)
+											//- source.swiper-lazy(srcset="#" data-srcset="img/@1x/prod.jpg"  type=`image/jpg`)
+											img.swiper-lazy(src="#" data-src="img/@2x/prod.jpg", alt="")
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div>
+						.swiper-pagination
+				+e.lines.col
+					mixin line(t1,t2)
+						+e.item.row
+							.col
+								span= t1
+							.col-auto= t2
+					 
+					+e.item.row
+						.col
+							span.strong Артикул
+						.col-auto.strong 133004
+					
+					+line("Тип недвижимости","квартира")
+					+line("Площадь","158")
+					+line("Этаж","9 из 15")
+					+line("Уровней","1")
+					+line("Гостинных","1")
+					+line("Спален","3")
+					+line("Санузлов","2")
+					+line("Балкон","да")
+					+line("Вид на море","да")
+					+line("Мебель","да")
+					+line("Земля в собственность","нет")
+					+line("Рассрочка","да")
+					+e.item.row
+						.col
+							span Проект
+						.col-auto.text-primary Admiral Premium Residence
+					+line("Город","Алания")
+					+line("Год постройки","2016")
+					+line("Открытый бассейн","да")
+					+line("Закрытый бассейн","да")
+					+line("Спортзал","да")
+					+line("Сауна","да")
+					+e.panel
+						.row.align-items-center
+							.col.h4.strong 14 520 365 ₽
+							.col-auto
+								+input('₽','select')
+						+e.btn.link-modal(href="#modal-book") Забронировать
+					
+	// end s-card-head

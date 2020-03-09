@@ -1,46 +1,101 @@
 
 mixin modal() 
- 
-	//- #modal-win.modal.fade(tabindex='-1', role='dialog', aria-labelledby='modal-win', aria-hidden='true')
-		
-	//- 	div( class="   modal-dialog  modal-dialog-centered  " role='document') 
-	//- 		+form-wrap()(class=" modal-content modal-win ")
-	//- 			button.close.mfp-close(type='button', data-dismiss='modal', aria-label='Close')  ×
-	//- 			+input("tel","Введите ваш телефон")(name="tel" required) 
-				
-	//- 			+e.BUTTON.btn.btn.btn-accent.btn-block Отправить
-	//- 			+b.wrap-polite
-	//- 				+b.custom-input.polite
-	//- 					+b.LABEL.custom-input.polite
-	//- 						+e.INPUT.input.__input-radio(type="checkbox" checked name="polite" required value="")
-	//- 						+e.SPAN.lab
-	//- 						| Даю 
-	//- 						| 
-	//- 						span.link( data-toggle='modal', data-target='#exampleModal2') согласие 
-
-	//- 						| на хранение и обработку   персональных данных
-	
- 
-
-	//- #thanks.modal.fade(tabindex='-1', role='dialog', aria-labelledby='thanks', aria-hidden='true')
-	//- 	div( class=" ttext-center  modal-dialog  modal-dialog-centered  " role='document') 
-	//- 		+form-wrap()(class=" modal-content modal-win ")
-	//- 			button.close.mfp-close(type='button', data-dismiss='modal', aria-label='Close')  ×
-	//- 			br
-	//- 			.h2 Заявка принята
-	//- 			br
-	//- 			.h3 Скоро с Вами свяжутся
-	//- 			br 
+  
 	.d-none
-		+form-wrap()(id="modal-call" class="  modal-win modal-form" )
-			.text-center
-				+e.title.h3.ttu Обратный звонок
-				p Заполните заявку и&nbsp;мы&nbsp;с&nbsp;Вами свяжемся в&nbsp;течении 15&nbsp;минут
-			+input("Ваше Имя")(required) 
-			+input("Ваш телефон","tel")(required)
-			//- +input("email","Ваше email")(required)
-			//- +text( "Комментарий")
-			+e.INPUT.btn(type="submit" value="Рассчитать") 
-			+polite()
+		div(id="modal-call" class="  modal-win modal-form" )
+			+form-wrap
+				.text-center
+					+e.title.h3.strong Заказать звонок
+					.h5.mb-4 На&nbsp;какой номер Вам перезвонить?
+				//- +input("Ваше Имя")(required) 
+				+input("Введите телефон","tel")(required class="form-control-lg")
+				//- +input("email","Ваше email")(required)
+				//- +text( "Комментарий")
+				+e.btn.btn-lg(type="submit" )  Заказать звонок
+				+polite()
 		// #modal-call
+		
+		div(id="modal-order" class="  modal-win modal-form" )
+			+form-wrap
+				.text-center
+					+e.title.h3.strong Заказать ознакомительный тур по&nbsp;всем объектам
+					.h5.mb-4 Заполните форму, мы&nbsp;свяжемся с&nbsp;Вами в&nbsp;ближайшее время.
+				+input("Ваше Имя")(required class="form-control-lg") 
+				+input("Введите телефон","tel")(required class="form-control-lg")
+				//- +input("email","Ваше email")(required)
+				//- +text( "Комментарий")
+				+e.btn.btn-lg(type="submit" )  Заказать ознакомительный тур
+				+polite()
+		// #modal-order
+		
+		div(id="modal-book" class="  modal-win modal-form" )
+			+form-wrap
+				.text-center
+					+e.title.h3.strong Забронировать
+					.h5.mb-4 Заполните форму, мы&nbsp;свяжемся с&nbsp;Вами в&nbsp;ближайшее время.
+				+input("Ваше Имя")(required class="form-control-lg") 
+				+input("Введите телефон","tel")(required class="form-control-lg")
+				//- +input("email","Ваше email")(required)
+				//- +text( "Комментарий")
+				+e.btn.btn-lg(type="submit" )  Заказать ознакомительный тур
+				+polite()
+		// #modal-book
+
+		div(id="modal-cuopon" class="  modal-win modal-form" )
+			+form-wrap
+				.text-center
+					+e.title.h3.strong Забронировать
+					.h5.mb-4 Заполните форму, мы&nbsp;свяжемся с&nbsp;Вами в&nbsp;ближайшее время.
+				+input("Ваше Имя")(required class="form-control-lg") 
+				+input("Введите телефон","tel")(required class="form-control-lg")
+				//- +input("email","Ваше email")(required)
+				//- +text( "Комментарий")
+				+e.btn.btn-lg(type="submit" )  Заказать ознакомительный тур
+				+polite()
+		// #modal-cuopon
+		div(id="modal-reg" class="  modal-win modal-form" )
+			+form-wrap
+				.text-center
+					+e.title.h3.strong Регистрация 
+				+input("Электронная почта",'email')(required class="form-control-lg") 
+				+input("Пароль","password")(required class="form-control-lg")
+				//- +input("email","Ваше email")(required)
+				//- +text( "Комментарий")
+				+e.btn.btn-lg(type="submit" ) Зарегистрироваться
+				.mb-1.text-center Вы зарегистрированы?  #[a(href="#modal-in" ).tdn.link-modal Войти] 
+		// #modal-reg
+		div(id="modal-in" class="  modal-win modal-form" )
+			+form-wrap
+				.text-center
+					+e.title.h3.strong Авторизация
+					.h5.mb-4 Заполните форму, мы&nbsp;свяжемся с&nbsp;Вами в&nbsp;ближайшее время.
+				+input("Электронная почта",'email')(required class="form-control-lg") 
+				+input("Пароль","password")(required class="form-control-lg")
+				//- +input("email","Ваше email")(required)
+				//- +text( "Комментарий")
+				+e.btn.btn-lg(type="submit" ) Войти
+				.mb-1.text-center Вы не зарегистрированы? #[a(href="#modal-reg" ).tdn.link-modal Зарегистрироваться]
+				.mb-1.text-center Забыли пароль? #[a(href="#" ).tdn Восстановить пароль]
+		// #modal-in
+		div(id="modal-add-object" class="  modal-win modal-form" )
+			+form-wrap
+				.text-center
+					+e.title.h3.strong Добавлять объекты могут только зарегистрированные пользователи
+					.h5.mb-4 Введите ваш логин и пароль.
+				+input("Электронная почта",'email')(required class="form-control-lg") 
+				+input("Пароль","password")(required class="form-control-lg")
+				//- +input("email","Ваше email")(required)
+				//- +text( "Комментарий")
+				+e.btn.btn-lg(type="submit" ) Войти
+				.mb-1.text-center Вы не зарегистрированы? #[a(href="#modal-reg" ).tdn.link-modal Зарегистрироваться]
+				.mb-1.text-center Забыли пароль? #[a(href="#" ).tdn Восстановить пароль]
+		// #modal-add-object
+
+		div(id="modal-thanks" class="  modal-win modal-form" )
+			+b.form-wrap
+				.text-center
+					+e.title.h3.strong Спасибо за обращение!
+					.h5.mb-4 Мы&nbsp;свяжемся с&nbsp;Вами в&nbsp;ближайшее время для уточнения деталей.
+		// #modal-thanks
+
 	// modal

@@ -1,7 +1,26 @@
+.fancybox-content {}
+
 .modal-win {
+	@include media-breakpoint-up(sm) {
+
+		padding: rem(40) rem(40) rem(20);
+	}
+
+	padding: rem(40) rem(20) rem(20);
 	// display: block;
 	width: 100%;
 	position: relative;
+	max-width: rem(558);
+
+	.form-wrap {
+		max-width: rem(370);
+		margin-left: auto;
+		margin-right: auto;
+
+		&__input {
+			text-align: center;
+		}
+	}
 
 	.modal-content {
 		// max-width: 485px;

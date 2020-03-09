@@ -1,0 +1,81 @@
+mixin s-filter()
+	// start s-filter
+	+b.SECTION.s-filter.section#s-filter&attributes(attributes)
+		.container
+			+b.section-title.text-center
+				h2 Подберите свою недвижимость в&nbsp;несколько кликов
+				
+			form
+				.row
+					mixin col()
+						.col-xl-3.col-md-6
+							block
+					+col
+						+input('Страна','select')
+						
+					+col
+						+input('Город','select')
+					+col
+						+input('Тип недвижимости','select')
+					+col
+						.row
+							.col
+								label.input-group
+									span.input-group-prepend
+										span.input-group-text Цена от
+									input.form-control(type="number" placeholder="Цена от" )
+							.col-auto
+								+input('₽','select')
+				+e.hidden-block--js.active
+					.row
+						+col 
+							label.input-group
+								span.input-group-prepend
+									span.input-group-text Площадь от
+								input.form-control(type="number" placeholder="Площадь от" )
+						+col 
+							label.input-group
+								span.input-group-prepend
+									span.input-group-text Спален от
+								input.form-control(type="number" placeholder="Спален от" )
+						+col 
+							label.input-group
+								span.input-group-prepend
+									span.input-group-text Санузлов от
+								input.form-control(type="number" placeholder="Санузлов от" )
+						+col
+							+input('Балкон','select')
+							
+						+col
+							+input('Вид на море','select')
+						+col
+							+input('Входной этаж','select')
+						+col
+							+input('Количество уровней','select')
+						+col
+							+input('Количество гостинных','select')
+						+col
+							+input('Мебель','select')
+						+col
+							+input('Бассейн','select')
+						+col
+							+input('Спортзал','select')
+						+col
+							+input('Сауна','select')
+				.row.align-items-center
+					.col-md.col-auto
+						+e.toggle.active
+							+icon("download")
+					.col-xl-3.col-md-6.col
+						button.btn.btn-primary.btn-block(type="button") Показать 435 предложений
+				+e.foot
+					.row
+						.col-xl-3.col-md-6.col
+							+input('Сортировать по','select')
+						.col-md.order-md-0.order-last
+							+in-c
+								+e.SPAN.text  Рассрочка (на этапе строительства)
+						.col-auto
+							+input('₽','select')
+
+	// end s-filter

@@ -1,0 +1,36 @@
+mixin s-layout()
+	// start s-layout
+	+b.s-layout#s-layout&attributes(attributes)
+		.container
+
+			+e.title Планировка
+			.tabs
+				.row--card.row
+						.col.order-lg-last
+							.tabs__caption
+								.tabs__btn.active 	Уровень 5
+								.tabs__btn Уровень 4
+								.tabs__btn Уровень 3
+								.tabs__btn Уровень 2
+								.tabs__btn Уровень 1
+							
+						.col-lg-8.col--card
+							.tabs__wrap
+								mixin tab()
+									.tabs__content&attributes(attributes)
+										+pic('layout')
+								+tab()(class="active")
+								+tab()
+								+tab()
+								+tab()
+								+tab()
+
+
+
+
+
+
+
+
+
+	// end s-layout

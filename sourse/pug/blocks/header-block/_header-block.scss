@@ -1,7 +1,44 @@
 .header-block {
 	display: block;
- 
-	
+	padding-top: rem(20);
+
+	&__slider {
+		height: rem(400);
+	}
+
+	&__wrapper {
+		margin-left: auto;
+		max-width: rem(320 + 100);
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+		padding: rem(20);
+	}
+
+	&__title {
+		@include rfs(26);
+		margin-bottom: rem(20);
+
+		strong {
+			display: block;
+			line-height: 1.2;
+		}
+	}
+
+	p {
+		@include rfs(20);
+
+	}
+
+	&__btn {
+		@extend .btn-white;
+		width: rem(213);
+		margin-top: rem(10);
+	}
+
 	// 
 	@include media-breakpoint-up(xl) {}
 

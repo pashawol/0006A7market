@@ -1,4 +1,40 @@
 mixin footer()
 	+b.FOOTER.footer.block-with-lazy
 		.container
-			h2 footer
+			+e.head.row
+				.col-lg-3.col-sm-6
+					+logo()
+					+e.logo-caption.text-secondary Турецкая недвижимость напрямую от застройщиков
+				.col-lg-3.col-sm-6
+					ul
+						li
+							a(href="#") О компании
+					
+						li
+							a(href="#") Вид на жительство в Турции
+					
+						li
+							a(href="#") Купить и сдать недвижимость
+					+video-btn()
+				.col-lg-3.col-sm-6
+					.row
+						+add-user()
+					+e.strong.strong.nb-2 Заказать ознакомительный тур по&nbsp;всем объектам:
+					a.strong.link-modal(href="#modal-order").tdn Оставить завяку
+				.col-lg-3.col-sm-6
+					+e.link(href="mailto:info@a7.market")
+						+icon('email')
+						| info@a7.market
+					.text-secondary.mb-1 Русскоговорящий отдел продаж: 
+					+e.link(href="tel:88001234567")
+						+icon('telephone')
+						| 8 800 123 45 67
+					br
+					+e.btn.btn-outline-primary.link-modal(href="#modal-call") Заказать звонок
+			+e.foot.row
+				+e.copy.col-sm © 2020 A7.market. Все права защищены.
+ 
+				.col-sm-auto
+					a(href="#").text-secondary Политика конфиденциальности 
+				.col-sm-auto
+					a(href="#").text-secondary Пользовательское соглашение

@@ -1,7 +1,23 @@
 mixin header-block()
 	// start header-block
 	+b.header-block#header-block
-		.container
-			h1 header-block
-			.row
+		.container.slider-wrap
+		
+			+e.slider.slider-js.swiper-container
+				.swiper-wrapper
+					- for (var x = 0; x < 3; x++)
+						+e.slide.swiper-slide.bg-wrap
+							picture.picture-bg.object-fit-js
+								source.swiper-lazy(srcset="#" data-srcset="img/@2x/webp/head.webp" type=`image/webp`)
+								//- source.swiper-lazy(srcset="#" data-srcset="img/@1x/webp/head.webp"  type=`image/webp`)
+								
+								source.swiper-lazy(srcset="#" data-srcset="img/@2x/head.jpg"  type=`image/jpg`)
+								//- source.swiper-lazy(srcset="#" data-srcset="img/@1x/head.jpg"  type=`image/jpg`)
+								img.swiper-lazy(src="#" data-src="img/@2x/head.jpg", alt="")
+							
+							+e.wrapper
+								+e.title #[strong Admiral Premium Residence.] Живем один раз!
+								p Бесплатный тест-драйв жилья 3 дня.
+								+e.btn.link-modal(href="#modal-cuopon") Получить купон
+			.swiper-pagination
 	// end header-block

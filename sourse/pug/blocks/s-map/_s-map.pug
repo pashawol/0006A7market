@@ -1,0 +1,32 @@
+mixin s-map()
+	// start s-map
+	+b.s-map#s-map&attributes(attributes)
+		.container 
+			+e.row.row.row--card
+				.s-map__col.col-lg-8(class="  col--card")
+					+e.title Проект Admiral Premium Residence (Алания, 2017 год)
+					.slider-wrap 
+						+e.slider.slider-js.swiper-container
+							.swiper-wrapper
+								- for (var x = 0; x < 3; x++)
+									+e.slide.swiper-slide.bg-wrap
+										picture.picture-bg.object-fit-js
+											source.swiper-lazy(srcset="#" data-srcset="img/@2x/webp/map.webp" type=`image/webp`)
+											//- source.swiper-lazy(srcset="#" data-srcset="img/@1x/webp/map.webp"  type=`image/webp`)
+											
+											source.swiper-lazy(srcset="#" data-srcset="img/@2x/map.jpg"  type=`image/jpg`)
+											//- source.swiper-lazy(srcset="#" data-srcset="img/@1x/map.jpg"  type=`image/jpg`)
+											img.swiper-lazy(src="#" data-src="img/@2x/map.jpg", alt="")
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div>
+						.swiper-pagination
+				.col
+					+e.title На карте
+					+e.map-wrap
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2348.6391160046664!2d27.5947711145534!3d53.93815503791993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbcf6b3646c9fd%3A0xd6c4dd34cf0132f8!2z0YPQuy4g0JLQvtGB0YLQvtGH0L3QsNGPIDEyNSwg0JzQuNC90YHQug!5e0!3m2!1sru!2sby!4v1583704507010!5m2!1sru!2sby" width="600" height="450" frameborder="0"  allowfullscreen=""></iframe>
+			+e.row.row.row--card
+				.col-lg-8.col--card
+					p Апарт-отель Zoku Amsterdam воплощает собой новую концепцию отеля, подходящего для работы и проживания. В апарт-отеле Zoku, рассчитанном на длительное размещение бизнес-путешественников, предлагается полный спектр гостиничных услуг. На крыше обустроена терраса с видом на город. На территории работает ресторан. Кроме того, к услугам гостей частная парковка.
+
+					p В апарт-отеле предлагается размещение в лофтах с кондиционером, телевизором с плоским экраном и кухонным столом посередине. В числе удобств каждого лофта — диван для отдыха после напряженного дня и полностью оборудованная кухня для приготовления пищи. В распоряжении гостей всех номеров собственная ванная комната с душем, феном и бесплатными туалетно-косметическими принадлежностями. На всей территории апарт-отеля Zoku предоставляется бесплатный высокоскоростной Wi-Fi.
+	// end s-map

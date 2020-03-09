@@ -1,0 +1,98 @@
+// start .s-card-head
+.s-card-head {
+
+	&__slide {
+		@include block(810, 615)
+	}
+
+
+	&__lines {
+		@include media-breakpoint-up(xl) {
+
+			margin-top: rem(-4);
+		}
+
+		margin-top: rem(25);
+		// padding-bottom: rem(30);
+	}
+
+	&__item {
+		line-height: 1;
+		// margin-bottom: rem(5);
+		line-height: 1.38;
+
+		.col {
+			position: relative;
+			overflow: hidden;
+
+			span {
+				position: relative;
+
+				&::before {
+					content: '..............................................................................................................................';
+					position: absolute;
+					left: 100%;
+					bottom: 0;
+					font-weight: normal;
+					color: #bcbcbc;
+					margin-left: 10px;
+				}
+			}
+		}
+	}
+
+	&__panel {
+		border-radius: $border-radius;
+		border: 1px solid $gray-400;
+		padding: rem(15) rem(20);
+		margin-top: rem(30);
+	}
+
+	&__btn {
+		@extend .btn;
+		@extend .btn-primary;
+		@extend .btn-block;
+		@extend .btn-lg;
+		margin-top: rem(2);
+		margin-bottom: rem(2);
+	}
+
+	@include media-breakpoint-up(xl) {}
+
+	@include media-breakpoint-up(lg) {}
+
+	@include media-breakpoint-up(md) {}
+
+	@include media-breakpoint-up(sm) {}
+
+	@include media-breakpoint-up(xs) {}
+
+	//
+	@include media-breakpoint-between(md, xl) {}
+
+
+	//
+	@include media-breakpoint-only(xs) {}
+
+	@include media-breakpoint-only(sm) {}
+
+	@include media-breakpoint-only(md) {}
+
+	@include media-breakpoint-only(lg) {}
+
+	@include media-breakpoint-only(xl) {}
+
+	//
+	@include media-breakpoint-down(xl) {}
+
+	@include media-breakpoint-down(lg) {}
+
+	@include media-breakpoint-down(md) {}
+
+	@include media-breakpoint-down(sm) {}
+
+	@include media-breakpoint-down(xs) {}
+
+}
+
+// end.s-card-head

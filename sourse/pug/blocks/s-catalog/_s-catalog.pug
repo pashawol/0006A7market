@@ -1,0 +1,52 @@
+
+mixin prod(t)
+	+b.prod-item
+		a.slider-wrap(href="#")
+			+e.slider.slider-prod-js.swiper-container
+				.swiper-wrapper
+					- for (var x = 1; x < 6; x++)
+						+e.slide.swiper-slide.bg-wrap
+							picture.picture-bg.object-fit-js
+								source.swiper-lazy(srcset="#" data-srcset=`img/@2x/webp/prod-${x}.webp` type=`image/webp`)
+								//- source.swiper-lazy(srcset="#" data-srcset=`img/@1x/webp/prod-${x}.webp`  type=`image/webp`)
+								
+								source.swiper-lazy(srcset="#" data-srcset=`img/@2x/prod-${x}.jpg`  type=`image/jpg`)
+								//- source.swiper-lazy(srcset="#" data-srcset=`img/@1x/prod-${x}.jpg`  type=`image/jpg`)
+								img.swiper-lazy(src="#" data-src=`img/@2x/prod-${x}.jpg`, alt="")
+			.swiper-pagination-full.swiper-pagination.swiper-pagination-hover
+			.swiper-pagination.swiper-pagination-hover
+		+e.caption
+			+e.title
+				a.strong(href="#")=(t || "Квартира 158 м2 Admiral Premium Residence")
+			p Алания, 2016 год постройки
+			+e.small Вид на море, балкон, сауна
+			+e.price 15 856 960 ₽
+mixin s-catalog()
+	// start s-catalog
+	+b.s-catalog&attributes(attributes)
+		.container 
+			.row
+				- for (var x = 0; x < 16; x++)
+					+e.col.col-xl-3.col-md-4.col-sm-6
+						+prod()
+					// /.col-xl-3.col-md-4.col-sm-6
+			+b.progress-block.active
+				+icon('loader')
+	// end s-catalog
+	
+mixin s-catalog2()
+	// start s-catalog
+	+b.s-catalog&attributes(attributes)
+		.container 
+			+e.title Похожие объекты в Admiral Premium Residence
+			.slider-main-wrap
+				+e.slider.slider-main-js.swiper-container
+					+e.swiper-wrapper.swiper-wrapper
+						- for (var y = 1; y < 5; y++)
+							+e.slide.swiper-slide
+								+prod()
+				+e.arrow.swiper-button-prev.swiper-button-prev-lg
+				+e.arrow.swiper-button-next.swiper-button-next-lg
+				+e.control.swiper-pagination.swiper-pagination-lg 
+			+e.btn(href="#") Все проекты Admiral Premium Residence
+	// end s-catalog
