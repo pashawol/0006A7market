@@ -1,6 +1,12 @@
 .top-line {
-  padding-top: rem(5);
+
   background-color: #fff;
+
+  &__body {
+    padding-top: rem(5);
+    background-color: #f8f8f8;
+    // padding-bottom: rem(5);
+  }
 
   @include media-breakpoint-up(md) {
 
@@ -15,14 +21,14 @@
     align-items: center;
 
     >* {
-      padding-bottom: rem(11);
+      padding-bottom: rem(5);
     }
   }
 
 
 
   &__link {
-    @extend .text-body;
+    color: $body-color;
     display: inline-flex;
     text-decoration: none !important;
     align-items: center;
@@ -34,6 +40,8 @@
     }
 
     &--color {
+      display: flex;
+
       @include media-breakpoint-down(md) {
         max-width: rem(90);
         line-height: 1;
@@ -51,6 +59,8 @@
     text-align: left;
 
     img {
+      width: 100%;
+
       @include media-breakpoint-up(sm) {
 
         max-width: rem(119);
@@ -135,18 +145,36 @@
   @include media-breakpoint-down(md) {}
 
 
+  // @include media-breakpoint-up(md) {
+
+  // }
+  &__mobile-hidden {
+    padding-top: rem(5);
+  }
+
   @include media-breakpoint-down(sm) {
     &__body {
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-      padding-top: rem(12);
+      padding-top: rem(8);
+      padding-bottom: rem(8);
+
+      .row {
+        justify-content: center;
+      }
+
+      .row>* {
+        padding-bottom: 0;
+      }
+
       background-color: #ffffff;
       z-index: 2;
     }
 
     &__mobile-hidden {
+      text-align: center;
       display: none;
       padding-top: rem(20);
-      padding-bottom: rem(20);
+      padding-bottom: rem(60);
       overflow-y: auto;
       position: fixed;
       background-color: #ffffff;
@@ -154,7 +182,7 @@
       z-index: -1;
       width: 100%;
       top: rem(90);
-      max-height: calc(100vh - #{rem(90)});
+      max-height: calc(100vh - #{rem(100)});
 
       &.active {
         display: block;
@@ -162,7 +190,7 @@
 
       .row {
         flex-direction: column;
-        align-items: initial;
+        // align-items: initial;
 
         >* {
           padding-bottom: rem(15);
@@ -188,11 +216,19 @@
 
   .form-control {
     padding-left: rem(47);
+
+  }
+
+  .form-control:not(:focus)+.input-group-append &__btn {
+    background-color: $light;
+    border-color: $light;
+    color: $body-color
   }
 
   &__btn {
     @extend .btn;
     width: rem(76);
+    @include mt;
   }
 }
 
@@ -224,6 +260,8 @@
   input {
     background-color: #f8f8f8 !important;
     border: none;
+    padding-left: 0;
+    padding-right: rem(30);
 
   }
 }

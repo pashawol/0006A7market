@@ -105,9 +105,12 @@ function eventHandler() {
 
 	JSCCommon.inputMask();
 
+	var Sticky = new hcSticky('.top-line', {
+		stickTo: 'body'
+	});
 	// JSCCommon.CustomInputFile();
 	// добавляет подложку для pixel perfect
-	$(".main-wrapper").after('<div class="screen" style="background-image: url(screen/card.jpg);"></div>')
+	// $(".main-wrapper").after('<div class="screen" style="background-image: url(screen/card.jpg);"></div>')
 	// /добавляет подложку для pixel perfect
 
 	// листалка по стр
@@ -152,8 +155,8 @@ function eventHandler() {
 	});
 	// slider
 	$(".slider-wrap").each(function () {
+		let sliderDef = {
 
-		const swiper4 = new Swiper($(this).children('.slider-js'), {
 			slidesPerView: 1,
 			spaceBetween: 0,
 			by: 'container',
@@ -170,25 +173,21 @@ function eventHandler() {
 				nextEl: $(this).children('.swiper-button-next'),
 				prevEl: $(this).children('.swiper-button-prev'),
 			},
+		}
+		const swiper4 = new Swiper($(this).children('.slider-js'), {
+			...sliderDef
+		});
+		const swipermain4 = new Swiper($(this).children('.slider-lg-js'), {
+			...sliderDef,
+			autoplay: {
+				delay: 5000,
+			},
+
 		});
 
+
 		const swiper7 = new Swiper($(this).children('.slider-prod-js'), {
-			slidesPerView: 1,
-			spaceBetween: 0,
-			by: 'container',
-			loop: true,
-			lazy: {
-				loadPrevNext: true,
-			},
-			pagination: {
-				el: $(this).children('.swiper-pagination'),
-				type: 'bullets',
-				clickable: true
-			},
-			navigation: {
-				nextEl: $(this).children('.swiper-button-next'),
-				prevEl: $(this).children('.swiper-button-prev'),
-			},
+			...sliderDef,
 			effect: 'fade',
 			speed: 1,
 		});

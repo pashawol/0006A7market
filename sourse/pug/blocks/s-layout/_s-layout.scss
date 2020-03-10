@@ -36,13 +36,13 @@
 			@include media-breakpoint-up(lg) {
 
 				width: 100%;
-				margin-left: -6px;
-				margin-right: -6px;
+				margin-left: -5px;
+				margin-right: -5px;
 			}
 
-			width: calc(50% - 12px);
-			margin-left: 6px;
-			margin-right: 6px;
+			width: calc(50% - 10px);
+			margin-left: 5px;
+			margin-right: 5px;
 			border: 1px solid $gray-400;
 			padding: rem(7);
 			margin-bottom: rem(15);

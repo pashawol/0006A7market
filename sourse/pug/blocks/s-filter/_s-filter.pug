@@ -20,29 +20,33 @@ mixin s-filter()
 					+col
 						.row
 							.col
-								label.input-group
-									span.input-group-prepend
-										span.input-group-text Цена от
+								.input-group.form-group
+									//- span.input-group-prepend
+									//- 	span.input-group-text Цена от
 									input.form-control(type="number" placeholder="Цена от" )
+									input.form-control(type="number" placeholder="Цена до" )
 							.col-auto
-								+input('₽','select')
-				+e.hidden-block--js.active
+								+select('₽','€','$')
+				+e.hidden-block--js
 					.row
 						+col 
-							label.input-group
-								span.input-group-prepend
-									span.input-group-text Площадь от
+							.input-group.form-group
+								//- span.input-group-prepend
+								//- 	span.input-group-text Площадь от
 								input.form-control(type="number" placeholder="Площадь от" )
+								input.form-control(type="number" placeholder="Площадь до" )
 						+col 
-							label.input-group
-								span.input-group-prepend
-									span.input-group-text Спален от
+							.input-group.form-group
+								//- span.input-group-prepend
+								//- 	span.input-group-text Спален от
 								input.form-control(type="number" placeholder="Спален от" )
+								input.form-control(type="number" placeholder="Спален до" )
 						+col 
-							label.input-group
-								span.input-group-prepend
-									span.input-group-text Санузлов от
+							.input-group.form-group
+								//- span.input-group-prepend
+								//- 	span.input-group-text Санузлов от
 								input.form-control(type="number" placeholder="Санузлов от" )
+								input.form-control(type="number" placeholder="Санузлов до" )
 						+col
 							+input('Балкон','select')
 							
@@ -64,7 +68,7 @@ mixin s-filter()
 							+input('Сауна','select')
 				.row.align-items-center
 					.col-md.col-auto
-						+e.toggle.active
+						+e.toggle
 							+icon("download")
 					.col-xl-3.col-md-6.col
 						button.btn.btn-primary.btn-block(type="button") Показать 435 предложений
@@ -76,6 +80,6 @@ mixin s-filter()
 							+in-c
 								+e.SPAN.text  Рассрочка (на этапе строительства)
 						.col-auto
-							+input('₽','select')
+							+select('₽','€','$')
 
 	// end s-filter

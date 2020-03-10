@@ -628,3 +628,10 @@ option {
 		max-width: 72%;
 	}
 }
+
+.btn-light {
+	&:hover {
+		background-color: transparent !important;
+		border-color: $light !important;
+	}
+}

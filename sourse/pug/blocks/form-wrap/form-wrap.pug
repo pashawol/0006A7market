@@ -10,6 +10,7 @@ mixin input(placeholder,  t='text', label, name= t)
 		else if t== "select"
 			+e.SELECT.input.form-control( name= name)&attributes(attributes)
 				option(value= placeholder disabled selected).d-none= placeholder
+				
 				- for (var x = 1; x < 5; x++)
 					option(value=` ${placeholder} ${x}`)= `${placeholder} ${x}`
 		else
@@ -24,15 +25,12 @@ mixin input(placeholder,  t='text', label, name= t)
 			+t(t,placeholder, name)&attributes(attributes)
 		block
 	// +e.input-wrap
-mixin select(label,pl,...items)
-	+e.input-wrap
-		label
-			+e.SPAN.title= label
-			+e.SELECT.input
-
-					option()= pl
-					each item in items
-						option()= item
+mixin select(pl,...items)
+	+e.input-wrap.form-group
+		+e.SELECT.input.form-control
+				option( )&attributes(attributes)= pl
+				each item in items
+					option()= item
 
 //- wrapper for form
 mixin form-wrap()

@@ -1,5 +1,11 @@
 "use strict";
 
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 var $ = jQuery;
 var JSCCommon = {
 	// часть вызов скриптов здесь, для использования при AJAX
@@ -93,10 +99,13 @@ function eventHandler() {
 	JSCCommon.modalCall();
 	JSCCommon.tabscostume('tabs');
 	JSCCommon.mobileMenu();
-	JSCCommon.inputMask(); // JSCCommon.CustomInputFile();
+	JSCCommon.inputMask();
+	var Sticky = new hcSticky('.top-line', {
+		stickTo: 'body'
+	}); // JSCCommon.CustomInputFile();
 	// добавляет подложку для pixel perfect
-
-	$(".main-wrapper").after('<div class="screen" style="background-image: url(screen/card.jpg);"></div>'); // /добавляет подложку для pixel perfect
+	// $(".main-wrapper").after('<div class="screen" style="background-image: url(screen/card.jpg);"></div>')
+	// /добавляет подложку для pixel perfect
 	// листалка по стр
 
 	$(" .top-nav li a, .scroll-link").click(function () {
@@ -137,7 +146,7 @@ function eventHandler() {
 	}); // slider
 
 	$(".slider-wrap").each(function () {
-		var swiper4 = new Swiper($(this).children('.slider-js'), {
+		var sliderDef = {
 			slidesPerView: 1,
 			spaceBetween: 0,
 			by: 'container',
@@ -154,27 +163,17 @@ function eventHandler() {
 				nextEl: $(this).children('.swiper-button-next'),
 				prevEl: $(this).children('.swiper-button-prev')
 			}
-		});
-		var swiper7 = new Swiper($(this).children('.slider-prod-js'), {
-			slidesPerView: 1,
-			spaceBetween: 0,
-			by: 'container',
-			loop: true,
-			lazy: {
-				loadPrevNext: true
-			},
-			pagination: {
-				el: $(this).children('.swiper-pagination'),
-				type: 'bullets',
-				clickable: true
-			},
-			navigation: {
-				nextEl: $(this).children('.swiper-button-next'),
-				prevEl: $(this).children('.swiper-button-prev')
-			},
+		};
+		var swiper4 = new Swiper($(this).children('.slider-js'), _objectSpread({}, sliderDef));
+		var swipermain4 = new Swiper($(this).children('.slider-lg-js'), _objectSpread({}, sliderDef, {
+			autoplay: {
+				delay: 5000
+			}
+		}));
+		var swiper7 = new Swiper($(this).children('.slider-prod-js'), _objectSpread({}, sliderDef, {
 			effect: 'fade',
 			speed: 1
-		});
+		}));
 		$(this).find('.swiper-pagination-hover').on('mouseenter', '.swiper-pagination-bullet', function () {
 			$(this).click();
 		});

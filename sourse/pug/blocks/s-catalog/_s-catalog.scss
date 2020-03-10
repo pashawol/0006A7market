@@ -11,6 +11,12 @@
 	}
 
 
+	&__slider {
+		@include media-breakpoint-up(xl) {
+			overflow: initial;
+		}
+	}
+
 	&__slide {
 		margin-bottom: rem(30);
 		// @include media-breakpoint-up(lg) {

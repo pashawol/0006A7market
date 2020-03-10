@@ -4,8 +4,16 @@
   position: relative;
   overflow: hidden;
   height: 100%;
+  @include mt;
+
+  &:hover {
+    box-shadow: 0 1px 10px rgba($color: #000000, $alpha: .2);
+  }
 
   .slider-wrap {
+    border-radius: $border-radius $border-radius 0 0;
+    position: relative;
+    overflow: hidden;
 
     &.disabled {
       .prod-item__slider {

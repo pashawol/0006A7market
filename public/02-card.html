@@ -42,7 +42,7 @@
 				<div class="top-line__body">
 					<div class="container">
 						<div class="row">
-							<div class="col d-lg-none"><a class="top-line__logo" href="#"><img src="img/svg/logo.png" alt=""/></a>
+							<div class="col d-lg-none"><a class="top-line__logo" href="#"><img src="img/svg/logo.svg" alt=""/></a>
 							</div>
 							<div class="col text-secondary d-none d-lg-block">Турецкая недвижимость напрямую от&nbsp;застройщиков</div>
 							<div class="col-auto"><a class="top-line__link top-line__link--color link-modal" href="#modal-add-object">
@@ -71,19 +71,19 @@
 				<div class="top-line__mobile-hidden">
 					<div class="container">
 						<div class="row">
-							<div class="col-6 text-secondary d-md-none">Турецкая недвижимость напрямую от&nbsp;застройщиков</div>
+							<div class="col-7 text-secondary d-md-none">Турецкая недвижимость напрямую от&nbsp;застройщиков</div>
 							<div class="col-6 d-md-none align-items-center"> <a class="top-line__link" href="mailto:info@a7.market">
 								<svg class="icon icon-email ">
 									<use xlink:href="img/svg/sprite.svg#email"></use>
 								</svg>info@a7.market</a>
 							</div>
-							<div class="col-6 d-md-none align-items-center">
+							<div class="col-auto d-md-none align-items-center">
 								<div class="text-secondary mb-1">Русскоговорящий отдел продаж: </div><a class="top-line__link" href="tel:88001234567">
 								<svg class="icon icon-telephone ">
 									<use xlink:href="img/svg/sprite.svg#telephone"></use>
 								</svg>8 800 123 45 67</a>
 							</div>
-							<div class="col-auto d-none d-lg-block"><a class="top-line__logo" href="#"><img src="img/svg/logo.png" alt=""/></a>
+							<div class="col-auto d-none d-lg-block"><a class="top-line__logo" href="#"><img src="img/svg/logo.svg" alt=""/></a>
 							</div>
 							<div class="col-auto order-md-0 order-last"><a class="top-line__btn btn-light" href="https://www.youtube.com/watch?v=uPk6lQoTThE&amp;list=PLDyvV36pndZFLTE13V4qNWTZbeipNhCgQ" data-fancybox="video-gal">
 								<svg class="icon icon-youtube ">
@@ -99,7 +99,7 @@
 										<div class="input-group">
 											<input class="form-control" type="text" placeholder="Введите страну, город, название или артикул"/>
 											<div class="input-group-append">
-												<button class="search__btn btn-light" type="submit">Найти
+												<button class="search__btn btn-primary" type="submit">Найти
 												</button>
 											</div>
 										</div>
@@ -225,7 +225,7 @@
 							</div>
 							<div class="s-card-head__item row">
 								<div class="col"><span>Проект</span></div>
-								<div class="col-auto text-primary">Admiral Premium Residence</div>
+								<div class="col-auto"><a class="tdn" href="#">Admiral Premium Residence</a></div>
 							</div>
 							<div class="s-card-head__item row">
 								<div class="col"><span>Город</span></div>
@@ -256,15 +256,12 @@
 									<div class="col h4 strong">14 520 365 ₽</div>
 									<div class="col-auto">
 										<div class="s-card-head__input-wrap form-group">
-											<select class="s-card-head__input form-control" name="select">
-												<option class="d-none" value="₽" disabled="disabled" selected="selected">₽</option>
-												<option value=" ₽ 1">₽ 1</option>
-												<option value=" ₽ 2">₽ 2</option>
-												<option value=" ₽ 3">₽ 3</option>
-												<option value=" ₽ 4">₽ 4</option>
+											<select class="s-card-head__input form-control">
+												<option>₽</option>
+												<option>€</option>
+												<option>$</option>
 											</select>
 										</div>
-										<!-- +e.input-wrap-->
 									</div>
 								</div><a class="s-card-head__btn link-modal" href="#modal-book">Забронировать</a>
 							</div>
@@ -625,7 +622,7 @@
 			<footer class="footer block-with-lazy">
 				<div class="container">
 					<div class="footer__head row">
-						<div class="col-lg-3 col-sm-6"><a class="footer__logo" href="#"><img src="img/svg/logo.png" alt=""/></a>
+						<div class="col-lg-3 col-sm-6"><a class="footer__logo" href="#"><img src="img/svg/logo.svg" alt=""/></a>
 							<div class="footer__logo-caption text-secondary">Турецкая недвижимость напрямую от застройщиков
 							</div>
 						</div>
@@ -668,8 +665,8 @@
 					<div class="footer__foot row">
 						<div class="footer__copy col-sm">© 2020 A7.market. Все права защищены.
 						</div>
-						<div class="col-sm-auto"><a class="text-secondary" href="#">Политика конфиденциальности </a></div>
-						<div class="col-sm-auto"><a class="text-secondary" href="#">Пользовательское соглашение</a></div>
+						<div class="col-sm-auto"><a href="#">Политика конфиденциальности </a></div>
+						<div class="col-sm-auto"><a href="#">Пользовательское соглашение</a></div>
 					</div>
 				</div>
 			</footer>
@@ -888,6 +885,7 @@
 		<!-- modal-->
 		<script src="js/lazy.js"></script>
 		<script src="libs/jquery/jquery.min.js"></script>
+		<script src="libs/hc-sticky/hc-sticky.js"></script>
 		<!-- полифил для picture-->
 		<script src="libs/picturefill/picturefill.min.js"></script>
 		<!-- полифил для object-fit-->

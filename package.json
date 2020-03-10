@@ -49,6 +49,7 @@
     "bootstrap": "^4.4.1",
     "gijgo": "^1.9.13",
     "gulp-group-css-media-queries": "^1.2.2",
+    "hc-sticky": "^2.2.3",
     "inputmask": "^5.0.3",
     "ion-rangeslider": "^2.3.1",
     "jquery": "^3.4.1",

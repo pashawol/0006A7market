@@ -42,7 +42,13 @@ $output-bourbon-deprecation-warnings: false;
   font-size: $small;
   line-height: 1.57;
   flex-wrap: nowrap;
-  padding-top: rem(40);
+
+  @include media-breakpoint-up(md) {
+
+    padding-top: rem(40);
+  }
+
+  padding-top: rem(15);
 
   li {
     width: auto;
@@ -50,6 +56,11 @@ $output-bourbon-deprecation-warnings: false;
 
   a {
     color: $secondary;
+
+    &:hover {
+      color: $body-color;
+    }
+
     text-decoration: none !important;
   }
 

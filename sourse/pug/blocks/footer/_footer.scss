@@ -17,7 +17,7 @@
   }
 
   &__link {
-    @extend .text-body;
+    color: $body-color;
     display: inline-flex;
     text-decoration: none !important;
     align-items: center;
@@ -101,7 +101,12 @@
     }
 
     a {
-      @extend .text-body;
+      // @extend .text-body;
+      color: $body-color;
+
+      &:hover {
+        color: $primary;
+      }
     }
   }
 
@@ -117,6 +122,15 @@
   }
 
   &__foot {
+    a {
+      // opacity: 0.8;
+      color: $secondary;
+
+      &:hover {
+        color: $body-color;
+      }
+    }
+
     @include media-breakpoint-up(sm) {
 
       padding-top: rem(30);
@@ -196,5 +210,24 @@
     }
   }
 
-  @include media-breakpoint-down(xs) {}
+  @include media-breakpoint-down(xs) {
+
+    &__strong,
+    &__logo-caption {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &__logo {
+      text-align: center;
+    }
+
+    text-align: center;
+
+    .col-sm-6 {
+      .row {
+        justify-content: center;
+      }
+    }
+  }
 }

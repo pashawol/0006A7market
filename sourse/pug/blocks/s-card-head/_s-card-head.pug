@@ -46,7 +46,8 @@ mixin s-card-head()
 					+e.item.row
 						.col
 							span Проект
-						.col-auto.text-primary Admiral Premium Residence
+						.col-auto
+							a.tdn(href="#") Admiral Premium Residence
 					+line("Город","Алания")
 					+line("Год постройки","2016")
 					+line("Открытый бассейн","да")
@@ -57,7 +58,7 @@ mixin s-card-head()
 						.row.align-items-center
 							.col.h4.strong 14 520 365 ₽
 							.col-auto
-								+input('₽','select')
+								+select('₽','€','$')
 						+e.btn.link-modal(href="#modal-book") Забронировать
 					
 	// end s-card-head
