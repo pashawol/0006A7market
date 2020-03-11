@@ -37,14 +37,14 @@ mixin modal()
 				+input("Введите телефон","tel")(required class="form-control-lg")
 				//- +input("email","Ваше email")(required)
 				//- +text( "Комментарий")
-				+e.btn.btn-lg(type="submit" )  Заказать ознакомительный тур
+				+e.btn.btn-lg(type="submit" )  Забронировать
 				+polite()
 		// #modal-book
 
 		div(id="modal-cuopon" class="  modal-win modal-form" )
 			+form-wrap
 				.text-center
-					+e.title.h3.strong Забронировать
+					+e.title.h3.strong Заказать ознакомительный тур по&nbsp;всем объектам
 					.h5.mb-4 Заполните форму, мы&nbsp;свяжемся с&nbsp;Вами в&nbsp;ближайшее время.
 				+input("Ваше Имя")(required class="form-control-lg") 
 				+input("Введите телефон","tel")(required class="form-control-lg")
@@ -53,6 +53,20 @@ mixin modal()
 				+e.btn.btn-lg(type="submit" )  Заказать ознакомительный тур
 				+polite()
 		// #modal-cuopon
+		
+		div(id="modal-book-tour" class="  modal-win modal-form" )
+			+form-wrap
+				.text-center
+					+e.title.h3.strong Бесплатный тест-драйв жилья&nbsp;3&nbsp;дня
+					.h5.mb-4 Заполните форму, мы&nbsp;свяжемся с&nbsp;Вами в&nbsp;ближайшее время.
+				+input("Ваше Имя")(required class="form-control-lg") 
+				+input("Введите телефон","tel")(required class="form-control-lg")
+				//- +input("email","Ваше email")(required)
+				//- +text( "Комментарий")
+				+e.btn.btn-lg(type="submit" ) Получить купон
+				+polite()
+		// #modal-book-tour
+
 		div(id="modal-reg" class="  modal-win modal-form" )
 			+form-wrap
 				.text-center
