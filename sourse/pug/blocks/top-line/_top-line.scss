@@ -173,7 +173,7 @@
     &__mobile-hidden {
       text-align: center;
       display: none;
-      padding-top: rem(20);
+      padding-top: rem(30);
       padding-bottom: rem(60);
       overflow-y: auto;
       position: fixed;
@@ -181,7 +181,7 @@
       left: 0;
       z-index: -1;
       width: 100%;
-      top: rem(90);
+      top: rem(80);
       max-height: calc(100vh - #{rem(100)});
 
       &.active {
